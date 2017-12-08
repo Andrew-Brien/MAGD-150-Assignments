@@ -1,0 +1,34 @@
+void setup()
+{
+  size(500,500);
+  background(95,222,182);
+}
+void draw()
+{
+  colorMode(RGB);
+  color c1 = color(222,95,213);
+  color c2 = color(242,69,0);
+  color c3 = color(32,227,68);
+  colorMode(HSB);
+  color c4 = color(248,86,89);
+  
+  noStroke();
+  fill(c3);
+  ellipse(250,250,500,500);
+  
+  fill(c2);
+  beginShape();
+  vertex(20,0);
+  vertex(250,500);
+  vertex(480,0);
+  endShape();
+  
+  stroke(0);
+  strokeWeight(5);
+  
+  fill(c1);
+  triangle(375,400,125,400,250,200);
+  
+  fill(c4);
+  bezier(222,8,320,56,162,156,250,200);
+}
