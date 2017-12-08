@@ -1,0 +1,49 @@
+oid setup()
+{
+ size(1200,900); 
+}
+
+void draw()
+{
+ background(0);
+ for (int i = 0; i < 2000; i = i + 1)
+ { 
+   stroke(255);
+   point(random(1600), random(900));
+ }
+ stop();
+ 
+ fill(240);
+ ellipse(200,200,300,300);
+ fill(200);
+ ellipse(200,200,250,250);
+ fill(150);
+ ellipse(200,200,200,200);
+ fill(50);
+ ellipse(200,200,150,150);
+ fill(15);
+ ellipse(200,200,75,75);
+ 
+ for(int i = 0; i < 110; i = i + 10)
+ {
+  stroke(255);
+  line(1000,450 - i,1070, 360 - i);
+ }
+ 
+ fill(25);
+ ellipse(1000,400,100,100);
+ stroke(50);
+ noFill();
+ ellipse(975,410,20,20);
+ 
+ fill(150);
+ stroke(255);
+ rectMode(CENTER);
+ rect(250,700,300,300);
+ fill(0);
+ noStroke();
+ rect(250,700,250,250,50);
+ fill(255);
+ rect(250,700,70,70,50);
+
+}
