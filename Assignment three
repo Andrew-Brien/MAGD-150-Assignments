@@ -1,0 +1,18 @@
+void setup()
+{
+ size(1000,1000); 
+ println("pressing any mouse button draws circles");
+ println("window size: 1000 x 1000");
+ colorMode(RGB,100);
+}
+void draw()
+{
+  float f = 250.5;
+  float a = 0.5;
+  color c = color(dist(a,a,pmouseX,pmouseY) / 10,dist(1000,1000,pmouseX,pmouseY) / 10, f);
+  fill(c);
+  if (mousePressed == true)  
+  {
+    ellipse(mouseX,mouseY, max(mouseX,mouseY) / 5 + 10,max(mouseX,mouseY) / 5 + 10);
+  }
+}
